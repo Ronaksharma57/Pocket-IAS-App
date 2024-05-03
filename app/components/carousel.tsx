@@ -82,7 +82,7 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="/img1.jpeg"
+            src="/img1.jpg"
             className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
@@ -105,7 +105,7 @@ const Carousel = () => {
             <div className="flex  ">
               <div className="flex ml-2">
                 <img
-                  src="/img1.jpeg"
+                  src="/img1.jpg"
                   alt=""
                   width={110}
                   height={92}
@@ -137,7 +137,7 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="/img2.jpeg"
+            src="/img2.jpg"
             className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
@@ -160,7 +160,7 @@ const Carousel = () => {
             <div className="flex  ">
               <div className="flex ml-2">
                 <img
-                  src="/img2.jpeg"
+                  src="/img2.jpg"
                   alt=""
                   width={110}
                   height={92}
@@ -192,7 +192,7 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="/img3.jpeg"
+            src="/img3.jpg"
             className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
@@ -215,7 +215,7 @@ const Carousel = () => {
             <div className="flex  ">
               <div className="flex ml-2">
                 <img
-                  src="/img3.jpeg"
+                  src="/img3.jpg"
                   alt=""
                   width={110}
                   height={92}
@@ -247,7 +247,7 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="/img4.jpeg"
+            src="/img4.jpg"
             className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
@@ -270,7 +270,7 @@ const Carousel = () => {
             <div className="flex  ">
               <div className="flex ml-2">
                 <img
-                  src="/img4.jpeg"
+                  src="/img4.jpg"
                   alt=""
                   width={110}
                   height={92}
