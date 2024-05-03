@@ -17,6 +17,7 @@ const Carousel = () => {
       data-twe-carousel-init
       data-twe-ride="carousel"
     >
+      
       <div className="relative rounded-lg w-full  overflow-hidden ">
         <div
           className="relative float-left -mr-[100%] w-[90vw] main-div  transition-transform duration-[1000ms] ease-in-out motion-reduce:transition-none"
@@ -81,7 +82,7 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="/img.jpeg"
+            src="/img1.jpeg"
             className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
@@ -104,7 +105,7 @@ const Carousel = () => {
             <div className="flex  ">
               <div className="flex ml-2">
                 <img
-                  src="/img.jpeg"
+                  src="/img1.jpeg"
                   alt=""
                   width={110}
                   height={92}
@@ -136,7 +137,7 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="/img.jpeg"
+            src="/img2.jpeg"
             className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
@@ -159,7 +160,7 @@ const Carousel = () => {
             <div className="flex  ">
               <div className="flex ml-2">
                 <img
-                  src="/img.jpeg"
+                  src="/img2.jpeg"
                   alt=""
                   width={110}
                   height={92}
@@ -191,7 +192,7 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="/img.jpeg"
+            src="/img3.jpeg"
             className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
@@ -214,7 +215,7 @@ const Carousel = () => {
             <div className="flex  ">
               <div className="flex ml-2">
                 <img
-                  src="/img.jpeg"
+                  src="/img3.jpeg"
                   alt=""
                   width={110}
                   height={92}
@@ -246,7 +247,7 @@ const Carousel = () => {
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
-            src="/img.jpeg"
+            src="/img4.jpeg"
             className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
@@ -269,7 +270,7 @@ const Carousel = () => {
             <div className="flex  ">
               <div className="flex ml-2">
                 <img
-                  src="/img.jpeg"
+                  src="/img4.jpeg"
                   alt=""
                   width={110}
                   height={92}
