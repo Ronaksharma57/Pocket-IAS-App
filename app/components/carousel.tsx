@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import Button from "../components/button";
+import Button from "../components/Button";
 const Carousel = () => {
   useEffect(() => {
     const init = async () => {
