@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-
+import Button from "../components/button";
 const Carousel = () => {
   useEffect(() => {
     const init = async () => {
@@ -9,6 +9,7 @@ const Carousel = () => {
     };
     init();
   }, []);
+
   return (
     <div
       id="carouselExampleCaptions"
@@ -16,133 +17,297 @@ const Carousel = () => {
       data-twe-carousel-init
       data-twe-ride="carousel"
     >
-      <div className="relative rounded-lg w-full overflow-hidden ">
+      <div className="relative rounded-lg w-full  overflow-hidden ">
         <div
-          className="relative float-left -mr-[100%] w-[90vw]  transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative float-left -mr-[100%] w-[90vw] main-div  transition-transform duration-[1000ms] ease-in-out motion-reduce:transition-none"
           data-twe-carousel-active
           data-twe-carousel-item
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
             src="/img.jpeg"
-            className="block h-[75vh] w-full rounded-lg "
+            className="block h-[75vh] w-full !object-cover rounded-lg "
             alt="..."
           />
+
           {/* top text */}
-          <div className="absolute inset-x-[7%] inset-y-[5%]  rounded-md !flex !justify-between  bottom-10   text-white md:block">
+          <div className="absolute inset-x-[3%] inset-y-[5%]  rounded-md !flex !justify-between  bottom-10   text-white md:block">
             <div className="font-bold text-2xl  ">Mains</div>
             <div className=" ">
               Answer writing is <br /> that{" "}
-              <span className="simple"> simple!</span>
+              <span className="simple">editing </span>
             </div>
           </div>
 
           {/* green verdict */}
-          <div className="absolute green inset-x-[1%] inset-y-[5%]  bottom-20  px-10 py-52 text-white md:block">
+          <div className="absolute green sm:text-5xl  md:inset-x-[1%] md:inset-y-[5%] md: px-10 lg:py-48  text-white md:py-[15%] py-[3%]">
             Green <br /> Verdict
           </div>
 
-          <div className="absolute inset-x-[5%]  bs3 rounded-md   bottom-10  py-5 text-white md:block">
-            <div className="">
-              <img
-                src="/img.jpeg"
-                alt=""
-                width={110}
-                height={92}
-                className="rounded flex"
-              />
-            </div>
-            <div className="gs3">
-              <h4 className="flex">
-                <section className="bg-red-500 rounded  bg-cover font-bold">
-                  GS3
-                </section>
-                Conversation
-              </h4>
-              <p className="font-bold">
-                Analysis of campaign songs and newspaper ads of the BJP and
-                Congress during <br /> Lok Sabha elections
-              </p>
-            </div>
-            <div>
-              <button
-                type="button"
-                className=" btn-bg focus:outline-none text-white focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-              >
-                Read More
-              </button>
+          <div className="absolute news-text inset-x-[5%]  bs3 rounded-md  bottom-5  md:py-5 text-white flex text-center justify-between">
+            <div className="flex  ">
+              <div className="flex ml-2">
+                <img
+                  src="/img.jpeg"
+                  alt=""
+                  width={110}
+                  height={92}
+                  className="rounded flex sm-img"
+                />
+                <div className="gs3 mr-14 ">
+                  <h4 className="flex font-bold gs3-h4 p-1 ">
+                    <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
+                      GS3
+                    </section>
+                    Conversation
+                  </h4>
+                  <p className="md:font-bold w-full gs3-h4   ">
+                    Analysis of campaign songs and newspaper ads of the BJP and
+                    Congress during Lok Sabha elections
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 mr-5 btn-hide">
+                <Button />
+              </div>
             </div>
           </div>
         </div>
 
         <div
-          className="relative float-left -mr-[100%] hidden w-[90vw] transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+          className="relative float-left -mr-[100%] main-div hidden w-[90vw] transition-transform duration-[1000ms] ease-in-out motion-reduce:transition-none"
           data-twe-carousel-item
           style={{ backfaceVisibility: "hidden" }}
         >
           <img
             src="/img.jpeg"
-            className="block h-[75vh] w-full rounded-lg "
+            className="block h-[75vh] w-full object-cover rounded-lg "
             alt="..."
           />
-          <div className="absolute inset-x-[7%] inset-y-[5%]  rounded-md !flex !justify-between  bottom-10   text-white md:block">
+
+          {/* top text */}
+          <div className="absolute inset-x-[3%] inset-y-[5%]  rounded-md !flex !justify-between  bottom-10   text-white md:block">
             <div className="font-bold text-2xl  ">Mains</div>
             <div className=" ">
               Answer writing is <br /> that{" "}
-              <span className="simple"> simple!</span>
+              <span className="simple">editing </span>
             </div>
           </div>
 
           {/* green verdict */}
-          <div className="absolute green inset-x-[1%] inset-y-[5%]  bottom-20  px-10 py-52 text-white md:block">
+          <div className="absolute green sm:text-5xl  md:inset-x-[1%] md:inset-y-[5%] md: px-10 lg:py-48  text-white md:py-[15%] py-[3%]">
             Green <br /> Verdict
           </div>
 
-          <div className="absolute inset-x-[5%]  bs3 rounded-md   bottom-10  py-5 text-white md:block">
-            <div className="">
-              <img
-                src="/img.jpeg"
-                alt=""
-                width={110}
-                height={92}
-                className="rounded flex"
-              />
+          <div className="absolute news-text inset-x-[5%]  bs3 rounded-md  bottom-5  md:py-5 text-white flex text-center justify-between">
+            <div className="flex  ">
+              <div className="flex ml-2">
+                <img
+                  src="/img.jpeg"
+                  alt=""
+                  width={110}
+                  height={92}
+                  className="rounded flex sm-img"
+                />
+                <div className="gs3 mr-14 ">
+                  <h4 className="flex font-bold gs3-h4 p-1 ">
+                    <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
+                      GS3
+                    </section>
+                    Conversation
+                  </h4>
+                  <p className="md:font-bold w-full gs3-h4   ">
+                    Analysis of campaign songs and newspaper ads of the BJP and
+                    Congress during Lok Sabha elections
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 mr-5 btn-hide">
+                <Button />
+              </div>
             </div>
-            <div className="gs3">
-              <h4 className="flex">
-                <section className="bg-red-500 rounded  bg-cover font-bold">
-                  GS3
-                </section>
-                Conversation
-              </h4>
-              <p className="font-bold">
-                Analysis of campaign songs and newspaper ads of the BJP and
-                Congress during <br /> Lok Sabha elections
-              </p>
+          </div>
+        </div>
+        <div
+          className="relative float-left -mr-[100%] main-div hidden w-[90vw] transition-transform duration-[1000ms] ease-in-out motion-reduce:transition-none"
+          data-twe-carousel-item
+          style={{ backfaceVisibility: "hidden" }}
+        >
+          <img
+            src="/img.jpeg"
+            className="block h-[75vh] w-full object-cover rounded-lg "
+            alt="..."
+          />
+
+          {/* top text */}
+          <div className="absolute inset-x-[3%] inset-y-[5%]  rounded-md !flex !justify-between  bottom-10   text-white md:block">
+            <div className="font-bold text-2xl  ">Mains</div>
+            <div className=" ">
+              Answer writing is <br /> that{" "}
+              <span className="simple">editing </span>
             </div>
-            <div>
-              <button
-                type="button"
-                className=" btn-bg focus:outline-none text-white focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
-              >
-                Read More
-              </button>
+          </div>
+
+          {/* green verdict */}
+          <div className="absolute green sm:text-5xl  md:inset-x-[1%] md:inset-y-[5%] md: px-10 lg:py-48  text-white md:py-[15%] py-[3%]">
+            Green <br /> Verdict
+          </div>
+
+          <div className="absolute news-text inset-x-[5%]  bs3 rounded-md  bottom-5  md:py-5 text-white flex text-center justify-between">
+            <div className="flex  ">
+              <div className="flex ml-2">
+                <img
+                  src="/img.jpeg"
+                  alt=""
+                  width={110}
+                  height={92}
+                  className="rounded flex sm-img"
+                />
+                <div className="gs3 mr-14 ">
+                  <h4 className="flex font-bold gs3-h4 p-1 ">
+                    <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
+                      GS3
+                    </section>
+                    Conversation
+                  </h4>
+                  <p className="md:font-bold w-full gs3-h4   ">
+                    Analysis of campaign songs and newspaper ads of the BJP and
+                    Congress during Lok Sabha elections
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 mr-5 btn-hide">
+                <Button />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="relative float-left -mr-[100%] main-div hidden w-[90vw] transition-transform duration-[1000ms] ease-in-out motion-reduce:transition-none"
+          data-twe-carousel-item
+          style={{ backfaceVisibility: "hidden" }}
+        >
+          <img
+            src="/img.jpeg"
+            className="block h-[75vh] w-full object-cover rounded-lg "
+            alt="..."
+          />
+
+          {/* top text */}
+          <div className="absolute inset-x-[3%] inset-y-[5%]  rounded-md !flex !justify-between  bottom-10   text-white md:block">
+            <div className="font-bold text-2xl  ">Mains</div>
+            <div className=" ">
+              Answer writing is <br /> that{" "}
+              <span className="simple">editing </span>
+            </div>
+          </div>
+
+          {/* green verdict */}
+          <div className="absolute green sm:text-5xl  md:inset-x-[1%] md:inset-y-[5%] md: px-10 lg:py-48  text-white md:py-[15%] py-[3%]">
+            Green <br /> Verdict
+          </div>
+
+          <div className="absolute news-text inset-x-[5%]  bs3 rounded-md  bottom-5  md:py-5 text-white flex text-center justify-between">
+            <div className="flex  ">
+              <div className="flex ml-2">
+                <img
+                  src="/img.jpeg"
+                  alt=""
+                  width={110}
+                  height={92}
+                  className="rounded flex sm-img"
+                />
+                <div className="gs3 mr-14 ">
+                  <h4 className="flex font-bold gs3-h4 p-1 ">
+                    <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
+                      GS3
+                    </section>
+                    Conversation
+                  </h4>
+                  <p className="md:font-bold w-full gs3-h4   ">
+                    Analysis of campaign songs and newspaper ads of the BJP and
+                    Congress during Lok Sabha elections
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 mr-5 btn-hide">
+                <Button />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="relative float-left -mr-[100%] main-div hidden w-[90vw] transition-transform duration-[1000ms] ease-in-out motion-reduce:transition-none"
+          data-twe-carousel-item
+          style={{ backfaceVisibility: "hidden" }}
+        >
+          <img
+            src="/img.jpeg"
+            className="block h-[75vh] w-full object-cover rounded-lg "
+            alt="..."
+          />
+
+          {/* top text */}
+          <div className="absolute inset-x-[3%] inset-y-[5%]  rounded-md !flex !justify-between  bottom-10   text-white md:block">
+            <div className="font-bold text-2xl  ">Mains</div>
+            <div className=" ">
+              Answer writing is <br /> that{" "}
+              <span className="simple">editing </span>
+            </div>
+          </div>
+
+          {/* green verdict */}
+          <div className="absolute green sm:text-5xl  md:inset-x-[1%] md:inset-y-[5%] md: px-10 lg:py-48  text-white md:py-[15%] py-[3%]">
+            Green <br /> Verdict
+          </div>
+
+          <div className="absolute news-text inset-x-[5%]  bs3 rounded-md  bottom-5  md:py-5 text-white flex text-center justify-between">
+            <div className="flex  ">
+              <div className="flex ml-2">
+                <img
+                  src="/img.jpeg"
+                  alt=""
+                  width={110}
+                  height={92}
+                  className="rounded flex sm-img"
+                />
+                <div className="gs3 mr-14 ">
+                  <h4 className="flex font-bold gs3-h4 p-1 ">
+                    <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
+                      GS3
+                    </section>
+                    Conversation
+                  </h4>
+                  <p className="md:font-bold w-full gs3-h4   ">
+                    Analysis of campaign songs and newspaper ads of the BJP and
+                    Congress during Lok Sabha elections
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6 mr-5 btn-hide">
+                <Button />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <button
-        className="absolute bottom-0 left-0 top-0 right-10 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        className="absolute  bottom-0 lg:-left-10 sm:left-20 top-0 right-10 z-[5] flex w-[50%] items-center justify-start border-0 bg-none p-0 text-center  lg:text-slate-500 md:text-transparent opacity-70 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] lg:hover:text-black sm:hover:text-transparent lg:hover:no-underline sm:hover:no-underline hover:opacity-90 hover:outline-none focus:text-slate-400 focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
         type="button"
         data-twe-target="#carouselExampleCaptions"
         data-twe-slide="prev"
       >
-        <span className="inline-block h-8 w-8">
+        <span className="inline-block  h-10 w-10 arrow ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 24 24"
+            viewBox="0 0 20 20"
             stroke-width="1.5"
             stroke="currentColor"
             className="h-6 w-6"
@@ -159,16 +324,16 @@ const Carousel = () => {
         </span>
       </button>
       <button
-        className="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+        className="absolute bottom-0 lg: sm:right-10  lg:-right-10 top-0 z-[5] flex w-[50%] items-center justify-end border-0 bg-none p-0 text-center lg:text-slate-400 sm:text-transparent opacity-70 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] sm:hover:text-transparent lg:hover:text-black  lg:hover:no-underline hover:opacity-90 hover:outline-none focus:text-slate-400 focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
         type="button"
         data-twe-target="#carouselExampleCaptions"
         data-twe-slide="next"
       >
-        <span className="inline-block h-8 w-8">
+        <span className="inline-block sm:hidden lg:block h-6 w-6 arrow ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 24 24"
+            viewBox="0 0 20 20"
             stroke-width="1.5"
             stroke="currentColor"
             className="h-6 w-6"
@@ -184,6 +349,7 @@ const Carousel = () => {
           Next
         </span>
       </button>
+
       <div className="font-bold mt-4 ml-2">Mains Categories</div>
     </div>
   );

@@ -16,7 +16,7 @@
   }
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,14 +30,10 @@ body {
 .bs3 {
   border-radius: 16px;
   background: rgba(103, 101, 101, 0.55);
-  display: flex !important;
-  justify-content: space-around !important;
-  align-items: center !important;
 }
 .green {
   color: #d3f58c;
   font-family: "Just Another Hand", cursive;
-  font-size: 50px;
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -1.2px;
@@ -51,10 +47,24 @@ body {
     ),
     #333336;
 }
-
 .gs3 {
-  margin-left: -50px;
+  margin-left: 10px;
 }
+.gs4 {
+  margin-left: 80px;
+}
+.gs3-h4 {
+  display: flex;
+  align-items: center;
+}
+.btn-read {
+  width: 100px;
+  height: 40px;
+  background-color: #3e3e3e;
+  color: #fff;
+  border-radius: 30px;
+}
+
 .simple {
   background: linear-gradient(90deg, #daed00 0%, #ffc5eb 100%);
   background-clip: text;
@@ -66,4 +76,56 @@ body {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0.196px;
+}
+
+@media only screen and (max-width: 425px) {
+  .sm-img {
+    display: none;
+  }
+  .main-div {
+    width: 100vw !important;
+  }
+  .gs3 {
+    margin-left: 10px;
+  }
+  .news-text {
+    bottom: 0px;
+  }
+
+  .green {
+    display: flex !important;
+    align-items: center !important;
+    text-align: center;
+    margin-left: 2rem;
+    margin-bottom: 20px;
+
+    justify-content: center !important;
+    bottom: 10rem;
+  }
+  .gs3-h4 {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .green {
+    font-size: 40px;
+    bottom: 8rem;
+  }
+  .sm-img {
+    display: none;
+  }
+  .bs3 {
+    background-color: transparent;
+  }
+  .btn-bg {
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .btn-hide {
+    display: none;
+  }
 }
