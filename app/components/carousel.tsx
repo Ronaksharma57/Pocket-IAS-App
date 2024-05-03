@@ -42,8 +42,10 @@ const Carousel = () => {
 
             {/* green verdict */}
             <div className="absolute green sm:text-5xl  md:inset-x-[1%] md:inset-y-[5%] md:px-10 lg:py-48 text-white md:py-[15%] py-[3%]">
-  <span className="sm:hidden md:block">Green <br /> Verdict</span>
-</div>
+              <span className="sm:hidden md:block">
+                Green <br /> Verdict
+              </span>
+            </div>
 
             <div className="absolute news-text inset-x-[5%]  bs3 rounded-md  bottom-5  md:py-5 text-white flex text-center justify-between">
               <div className="flex justify-center items-center  ">
@@ -55,14 +57,27 @@ const Carousel = () => {
                     // height={100}
                     className="rounded-lg flex sm-img bg-cover bg-fixed bg-no-repeat h-20 w-24"
                   />
-                  <div className="gs3   mr-14">
-                    <h4 className="flex font-bold gs3-h4 p-1 ">
-                      <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
+                  {/* <div className="gs3   mr-14">
+                    <h4 className="flex font-bold gs3-h4 p-1 !sm:text-center">
+                      <div className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
                         GS3
-                      </section>
+                      </div>
                       Conversation
                     </h4>
                     <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-left">
+                      Analysis of campaign songs and newspaper ads of the BJP
+                      and Congress during Lok Sabha elections
+                    </p>
+                  </div> */}
+                  {/* ========================================================= */}
+                  <div className="gs3 mx-auto flex flex-col items-center sm:items-start">
+                    <h4 className="flex font-bold gs3-h4 p-1 sm:justify-center">
+                      <div className="bg-red-500 mr-2 px-1 rounded bg-cover font-bold">
+                        GS3
+                      </div>
+                      Conversation
+                    </h4>
+                    <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-center sm:text-left">
                       Analysis of campaign songs and newspaper ads of the BJP
                       and Congress during Lok Sabha elections
                     </p>
@@ -111,7 +126,7 @@ const Carousel = () => {
                     // height={92}
                     className="rounded-lg flex sm-img bg-cover bg-fixed bg-no-repeat h-20 w-24 "
                   />
-                  <div className="gs3 mr-14 ">
+                  {/* <div className="gs3 mr-14 ">
                     <h4 className="flex font-bold gs3-h4 p-1 ">
                       <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
                         GS3
@@ -119,6 +134,18 @@ const Carousel = () => {
                       Conversation
                     </h4>
                     <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-left">
+                      Analysis of campaign songs and newspaper ads of the BJP
+                      and Congress during Lok Sabha elections
+                    </p>
+                  </div> */}
+                  <div className="gs3 mx-auto flex flex-col items-center sm:items-start">
+                    <h4 className="flex font-bold gs3-h4 p-1 sm:justify-center">
+                      <div className="bg-red-500 mr-2 px-1 rounded bg-cover font-bold">
+                        GS3
+                      </div>
+                      Conversation
+                    </h4>
+                    <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-center sm:text-left">
                       Analysis of campaign songs and newspaper ads of the BJP
                       and Congress during Lok Sabha elections
                     </p>
@@ -165,7 +192,7 @@ const Carousel = () => {
                     alt=""
                     className="rounded-lg flex sm-img bg-cover bg-fixed bg-no-repeat h-20 w-24"
                   />
-                  <div className="gs3 mr-14 ">
+                  {/* <div className="gs3 mr-14 ">
                     <h4 className="flex font-bold gs3-h4 p-1 ">
                       <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
                         GS3
@@ -173,6 +200,18 @@ const Carousel = () => {
                       Conversation
                     </h4>
                     <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-left">
+                      Analysis of campaign songs and newspaper ads of the BJP
+                      and Congress during Lok Sabha elections
+                    </p>
+                  </div> */}
+                  <div className="gs3 mx-auto flex flex-col items-center sm:items-start">
+                    <h4 className="flex font-bold gs3-h4 p-1 sm:justify-center">
+                      <div className="bg-red-500 mr-2 px-1 rounded bg-cover font-bold">
+                        GS3
+                      </div>
+                      Conversation
+                    </h4>
+                    <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-center sm:text-left">
                       Analysis of campaign songs and newspaper ads of the BJP
                       and Congress during Lok Sabha elections
                     </p>
@@ -219,7 +258,7 @@ const Carousel = () => {
                     alt=""
                     className="rounded-lg flex sm-img bg-cover bg-fixed bg-no-repeat h-20 w-24"
                   />
-                  <div className="gs3 mr-14 ">
+                  {/* <div className="gs3 mr-14 ">
                     <h4 className="flex font-bold gs3-h4 p-1 ">
                       <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
                         GS3
@@ -227,6 +266,18 @@ const Carousel = () => {
                       Conversation
                     </h4>
                     <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-left">
+                      Analysis of campaign songs and newspaper ads of the BJP
+                      and Congress during Lok Sabha elections
+                    </p>
+                  </div> */}
+                  <div className="gs3 mx-auto flex flex-col items-center sm:items-start">
+                    <h4 className="flex font-bold gs3-h4 p-1 sm:justify-center">
+                      <div className="bg-red-500 mr-2 px-1 rounded bg-cover font-bold">
+                        GS3
+                      </div>
+                      Conversation
+                    </h4>
+                    <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-center sm:text-left">
                       Analysis of campaign songs and newspaper ads of the BJP
                       and Congress during Lok Sabha elections
                     </p>
@@ -273,7 +324,7 @@ const Carousel = () => {
                     alt=""
                     className="rounded-lg flex sm-img bg-cover bg-fixed bg-no-repeat h-20 w-24"
                   />
-                  <div className="gs3 mr-14 ">
+                  {/* <div className="gs3 mr-14 ">
                     <h4 className="flex font-bold gs3-h4 p-1 ">
                       <section className="bg-red-500 mr-2 px-1  rounded  bg-cover  font-bold">
                         GS3
@@ -281,6 +332,18 @@ const Carousel = () => {
                       Conversation
                     </h4>
                     <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-left">
+                      Analysis of campaign songs and newspaper ads of the BJP
+                      and Congress during Lok Sabha elections
+                    </p>
+                  </div> */}
+                  <div className="gs3 mx-auto flex flex-col items-center sm:items-start">
+                    <h4 className="flex font-bold gs3-h4 p-1 sm:justify-center">
+                      <div className="bg-red-500 mr-2 px-1 rounded bg-cover font-bold">
+                        GS3
+                      </div>
+                      Conversation
+                    </h4>
+                    <p className="md:font-bold w-full gs3-h44 flex flex-wrap items-start text-center sm:text-left">
                       Analysis of campaign songs and newspaper ads of the BJP
                       and Congress during Lok Sabha elections
                     </p>
