@@ -4,7 +4,7 @@ import React from "react";
 function Button() {
   return (
     <>
-      <button type="button" className="btn-read">
+      <button type="button" className="btn-read text-sm ">
         Read Now
       </button>
     </>
